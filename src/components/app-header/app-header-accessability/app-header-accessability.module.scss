@@ -1,0 +1,17 @@
+@import "/src/styles/mixin";
+
+.accessability {
+  &__container {
+    margin-left: auto;
+    align-self: flex-start;
+  }
+  &__button {
+    @include font14;
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+  }
+  &__icon {
+    margin-right: 16px;
+  }
+}

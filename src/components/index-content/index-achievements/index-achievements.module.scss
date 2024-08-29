@@ -1,0 +1,24 @@
+@import "/src/styles/mixin";
+
+.title {
+  @include font32;
+  margin-bottom: 32px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.achievements {
+  margin: 0 auto;
+  width: 870px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  &__content {
+    padding: 34px 0 50px;
+    background-color: var(--blue-background-color);
+  }
+}

@@ -1,0 +1,11 @@
+@import "/src/styles/mixin";
+
+.text {
+  @include font32;
+  color: var(--white-color);
+  &_small {
+    @include font14;
+    margin-bottom: 8px;
+    color: var(--white-color);
+  }
+}

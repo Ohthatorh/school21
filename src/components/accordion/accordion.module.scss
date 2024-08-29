@@ -1,0 +1,27 @@
+@import "/src/styles/mixin";
+
+.accordion {
+  border-bottom: 1px solid var(--grey-color);
+  overflow: hidden;
+  &__title {
+    &_button {
+      padding: 40px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__text {
+    &_container {
+      transition: height 0.7s ease;
+    }
+  }
+  &__icon {
+    transition: transform 0.5s ease;
+    &_active {
+      transition: transform 0.5s ease;
+      transform: rotate(180deg);
+    }
+  }
+}

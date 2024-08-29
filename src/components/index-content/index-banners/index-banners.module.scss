@@ -1,0 +1,18 @@
+.pagination {
+  &__bullet {
+    margin: 0 4px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--grey-color);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__bullet_active {
+    background-color: var(--pagination-dot-color);
+  }
+}
+
+.swiper {
+  padding-bottom: 30px;
+}

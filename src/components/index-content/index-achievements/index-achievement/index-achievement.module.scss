@@ -1,0 +1,21 @@
+@import "/src/styles/mixin";
+
+.title {
+  @include font128;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.text {
+  @include font16;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.achievement {
+  padding: 0 10px;
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

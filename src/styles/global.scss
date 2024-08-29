@@ -1,0 +1,119 @@
+@import "./fonts";
+@import "./mixin";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --primary-color: #006699;
+  --grey-color: #e0e0e0;
+  --pagination-dot-color: #91a7db;
+  --blue-background-color: #eef0f9;
+  --light-grey-color: #f8f8f8;
+  --dark-grey-color: #8e8e8e;
+}
+
+body,
+html {
+  @include clearStyles;
+  // min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  scroll-behavior: smooth;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+li,
+label,
+span,
+div {
+  @include clearStyles;
+}
+
+ul {
+  @include clearStyles;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+input {
+  @include clearStyles;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: unset;
+  appearance: none;
+
+  &[type="number"] {
+    appearance: none;
+    -moz-appearance: textfield;
+
+    &:hover,
+    &:focus {
+      appearance: none;
+      -moz-appearance: textfield;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+button {
+  @include clearStyles;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--black-color);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1480px;
+
+  @media only screen and (min-width: 1024px) and (max-width: 1439.98px) {
+    max-width: 1320px;
+    padding: 0 100px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023.98px) {
+    max-width: 924px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

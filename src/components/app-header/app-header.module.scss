@@ -1,0 +1,10 @@
+.header {
+  &__container {
+    background-color: var(--primary-color);
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+  }
+}

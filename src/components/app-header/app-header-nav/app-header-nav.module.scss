@@ -1,0 +1,15 @@
+@import "/src/styles/mixin";
+
+.nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  &__container {
+    padding: 40px 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}
