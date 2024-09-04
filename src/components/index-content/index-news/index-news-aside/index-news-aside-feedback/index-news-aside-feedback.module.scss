@@ -1,0 +1,24 @@
+@import "/src/styles/mixin";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  @include font20;
+  width: 100%;
+  padding: 18px 24px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--yellow-color);
+}
+
+.text {
+  @include font14;
+  color: var(--dark-grey-color);
+}

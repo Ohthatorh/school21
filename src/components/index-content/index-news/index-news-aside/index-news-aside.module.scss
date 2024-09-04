@@ -1,0 +1,8 @@
+.aside {
+  &__list {
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

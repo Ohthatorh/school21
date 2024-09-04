@@ -26,6 +26,7 @@
     }
   }
   &__title {
+    @include font20;
     &__container {
       margin-bottom: 24px;
       padding: 7px 0;

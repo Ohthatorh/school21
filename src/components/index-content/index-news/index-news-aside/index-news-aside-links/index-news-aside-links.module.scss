@@ -1,0 +1,21 @@
+@import "/src/styles/mixin";
+
+.item {
+  padding: 18px 24px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--lightblue-color);
+}
+
+.button {
+  @include font20;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.span {
+  @include font14;
+}
